@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="editor">
+        <div class="toolbar-top">
+            <button id="undo-btn">↩️ Undo</button>
+            <button id="redo-btn">↪️ Redo</button>
+        </div>
+        <textarea id="text-area"></textarea>
+        <div class="toolbar-bottom">
+            <button id="add-text-btn">Add Text</button>
+            <button id="move-text-btn">Move Text</button>
+            <button id="change-font-btn">Change Font</button>
+            <button id="change-size-btn">Change Size</button>
+            <button id="change-style-btn">Change Style</button>
+            <select id="font-size-select">
+                <option value="12">12px</option>
+                <option value="14">14px</option>
+                <option value="16">16px</option>
+                <option value="18">18px</option>
+                <option value="20">20px</option>
+            </select>
+            <select id="font-style-select">
+                <option value="normal">Normal</option>
+                <option value="italic">Italic</option>
+                <option value="bold">Bold</option>
+                <option value="bold italic">Bold Italic</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
